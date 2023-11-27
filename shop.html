@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - VSwifty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo3.png" class="logo" alt="VSwifty Logo"></a>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="shop.html" class="active">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="signin.html"Sign In></a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+
+        </ul>
+    </section>
+
+    <section id="shop-content">
+        <h2>Welcome to Our Shop</h2>
+        <p>Explore our wide range of high-quality products. Find the perfect items that suit your needs and lifestyle.</p>
+
+        <div class="product" data-id="1" data-name="Product 1" data-price="19.99">
+            <img src="img/product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span>$19.99</span>
+            <button onclick="addToCart(1, 'Product 1', 19.99)">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="2" data-name="Product 2" data-price="29.99">
+            <img src="img/product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <span>$29.99</span>
+            <button onclick="addToCart(2, 'Product 2', 29.99)">Add to Cart</button>
+        </div>
+
+        <!-- Add more product entries as needed -->
+
+    </section>
+
+    <!-- Include your footer section here -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

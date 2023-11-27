@@ -1,0 +1,751 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header styles */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: rgb(131, 156, 196);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#navbar{
+  display:flex;
+  align-items:centre;
+  justify-content:centre;
+}
+
+#navbar li{
+  list-style:none;
+  padding:0 21px;
+  position: relative;
+
+}
+#navbar li a{
+  text-decoration:none;
+  font-size:16px;
+  font: weight 600px;
+  color:#141313;
+  transition:0.3s ease;
+}
+
+#navbar li a:hover ,
+#navbar li a.active{
+ color:aqua;
+
+}
+#navbar li a.active::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: aqua;
+  position: absolute;
+   bottom: -4px;
+   left: 20px;
+}
+
+
+#contact {
+  padding: 50px;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #1b1717;
+  margin-bottom: 20px;
+}
+
+
+/* Product section styles */
+#product-list {
+  padding: 50px;
+}
+
+.pro-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pro {
+  width: 30%;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.pro:hover {
+  transform: scale(1.05);
+}
+
+.pro img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.description {
+  padding: 15px;
+}
+
+.description h5 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.description span {
+  font-size: 16px;
+  color: #555;
+}
+
+.description p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+#shop-content {
+  padding: 20px;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  color: #333;
+}
+
+.product p {
+  color: #666;
+}
+
+.product span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e44d26;
+  margin-top: 10px;
+}
+
+.product button {
+  background-color: #e44d26;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #333;
+}
+
+
+.cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #4caf50;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.cart:hover {
+  background-color: #45a049;
+}
+
+#product-list {
+  padding: 20px;
+}
+
+.pro-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pro {
+  width: 30%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+  box-sizing: border-box;
+}
+
+.pro img {
+  width: 100%;
+  height: auto;
+}
+
+.pro .description {
+  padding: 10px;
+}
+
+.pro .cart {
+  background-color: #333;
+  color: #ffffff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+}
+
+.contact-info h4,
+.contact-form h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contact-info p,
+.contact-form label {
+  font-size: 16px;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+
+/* About section styles */
+#about {
+  padding: 40px 80px;
+}
+
+#about h2 {
+  font-size: 28px;
+  color: #0c4092;
+}
+
+#about p {
+  margin-bottom: 20px;
+  line-height: 1.6em;
+}
+
+#about h3 {
+  font-size: 20px;
+  color: #1b1717;
+  margin-top: 20px;
+}
+
+#about ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#about ul li {
+  font-size: 16px;
+  color: #1b1717;
+  margin-bottom: 10px;
+}
+
+/* Footer styles (you can customize as needed) */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  font-family: 'Bebas Neue', cursive;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 13px;
+  padding-bottom: 17px;
+}
+
+footer p {
+  margin: 0 0 10px 0;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(5, 5, 5);
+  opacity: 0.6;
+}
+
+footer a {
+  color: rgb(17, 16, 16);
+  margin-bottom: 10px;
+  font-size: 13px;
+  transition: all 0.5s ease;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+footer .follow i {
+  color: rgb(10, 7, 7);
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: #0dbea7;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
+
+footer .copyright span {
+  display: inline-block;
+  background: #0dbea7;
+  height: 1px;
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 992px) {
+  footer h4 {
+      font-size: 16px;
+  }
+
+  footer p {
+      font-size: 12px;
+  }
+
+  footer a {
+      font-size: 12px;
+  }
+}
+
+#cart-content {
+  padding: 20px;
+}
+
+.cart-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item button {
+  background-color: #e44d26;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+  background-color: #333;
+}
+
+#total-items,
+#total-price {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#checkout-btn {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#checkout-btn:hover {
+  background-color: #0dbea7;
+}
+
+/* Add more styles as needed */
+
+/* Logo styles */
+#logo {
+  width: 10px;
+  height: 2px;
+  background-color: rgb(204, 57, 12);
+  margin-right: 20px;
+}
+
+h2{
+  font-family:'Poppins', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 1000;
+  text-decoration: double;
+  font-size: 20px;
+  line-height: 1.2em;
+  color: #1b1717;
+  margin-left: 20px;
+  cursor: pointer;
+ 
+}
+
+h1{
+  font-family:'Bebas Neue', Arial, sans-serif;
+  font-weight:bold;
+  letter-spacing:-1px;
+  line-height:80px;
+  margin:0;
+  
+}
+
+h3{
+  font-family:'Open Sans Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+  display: block;
+  opacity: .9;
+  transition: all .3s ease-in-out;
+  text-decoration:dotted;
+
+}
+
+/* Define paragraph (p) styles */
+p {
+  font-size: 18px;
+  color: rgb(0, 5, 5);
+  margin: 15px 0 20px 0;
+}
+
+#hero {
+  position: relative;
+  background-image: url("img/download.jpeg");
+  height: 200vh;
+  width: 100%;
+  background-position: center top;
+  background-size: cover;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(13, 88, 88);
+}
+
+#hero h2 {
+  color: rgb(2, 12, 12);
+  margin-top: -5px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+#hero h1 {
+  color: rgb(2, 12, 12);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#hero button {
+  background-image: url("img/Black Hole - Purple by Marcus LaPorte.png");
+  background-color: transparent;
+  color: rgb(243, 69, 16);
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+#feature.fe-box{
+width: 180px;
+text-align: center;
+padding: 20px 15px;
+box-shadow: #161515;
+margin: auto;
+border-radius: 5px;
+background-color: rgba(112, 105, 105, 0.8);
+position: relative;
+float: left;
+left: 1%;
+transition: all .2s ease-in-out;
+}
+#feature img{
+  max-height: 100px;
+  width:auto; 
+  display: block;
+  margin: auto;
+  position:relative;
+  top:20px;
+  }
+  #feature span{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1em;
+    font-weight: bold;
+    display:block;
+    margin-top: 10px;
+    transition:all .2s ease-in-out;
+    }
+    #feature p{
+      opacity: 0;
+      visibility: hidden;
+      transition:opacity .2s ease-in-out;
+      transform: translateY(-20px);
+      }
+      /* hover */
+  #feature:hover span{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        }
+ #feature:hover p{
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+ }
+ #product1{
+  text-align: center;
+ }
+ #product1 .pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+ }
+ #product1 .pro{
+width: 24%;
+min-width: 250px;
+padding: 13px 10px;
+border: 1px solid #9c9797;
+border-radius: 25px;
+box-shadow:20px 20px 30px #b3aeae;
+margin: 1% 1.6%;
+cursor: pointer;
+float:left;
+position: relative;
+transition: 0.2s ease;
+
+ }
+
+ #product1 .pro:hover{
+  box-shadow: 20px 20px rgb(185, 181, 181);
+  }
+#product1 img {
+max-width: 100%;
+display: block;
+border-radius: 20px;
+}
+
+#product1 .pro .description{
+  text-align: start;
+  padding: 13px 1px;
+
+}
+
+#product1 .pro .description span{
+  color: #0c0101;
+  font-size: 14px ;
+  font-weight: 500;
+}
+
+#product1 .pro .description h5{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+ color:rgb(5, 4, 4);
+ text-transform: uppercase;
+}
+
+#product1 .pro .description i{
+font-size: 10px;  
+color: yellow;
+}
+
+#product1 .pro .description h4{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+color: rgb(9, 100, 9) ;
+font-weight: 13px ;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: rgba(13, 14, 13, 0.404);
+    background-color: #c4b9b9;
+    border: #9c9797;
+    margin-left: 10px;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 120px;
+
+}
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+footer h4{
+  font-family: 'Bebas Neue', cursive;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 13px;
+  padding-bottom: 17px;
+}
+footer p{
+  margin: 0 0 10px 0;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(5, 5, 5);
+  opacity: 0.6; 
+  }
+footer a{
+  color: rgb(17, 16, 16);
+  margin-bottom: 10px;
+  font-size: 13px;
+  transition: all 0.5s ease;
+} 
+footer a:hover{
+  text-decoration: none;
+  color: red;
+}
+
+footer .follow{
+  margin-top: 20px;
+}
+
+footer .follow i{
+  color: rgb(10, 7, 7);
+  padding-right: 5px;
+  cursor: pointer;
+}
+footer .follow i:hover,
+footer a:hover{
+  color: #0dbea7;
+}
+
+footer .copyright{
+  width: 100%;
+  text-align: center;
+}
+
+footer .copyright span{
+  display: inline-block;
+  background: #0dbea7;
+  height: 1px;
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 992px){
+  footer h4{
+    font-size: 16px;
+  }
+  footer p{
+    font-size: 12px;
+    }
+  footer a{
+    font-size: 12px;
+  }
+}
